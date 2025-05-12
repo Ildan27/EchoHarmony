@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Echo Harmony – Merch</title>
+  <title>Echo Harmony – Live</title>
   <!-- Fonts & Icons -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lora:wght@400;500&display=swap" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" defer></script>
 
-  <!-- Inline style in sync with other pages -->
+  <!-- Inline style (same palette as index) -->
   <style>
     :root{--primary:#7c4dff;--secondary:#3f51b5;--bg:#e0e0f8;--dark:#4a148c;--light:#fff;--accent:#673ab7;--navbg:rgba(197,202,233,.85);--cardbg:rgba(255,255,255,.94)}
     *,*::before,*::after{box-sizing:border-box}
@@ -39,12 +39,12 @@
     /* SECTION / CARDS */
     .section-title{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4vw,2.5rem);color:var(--primary);text-align:center;margin-bottom:30px}
     .featured-section{padding:40px 0}
-    .card-grid{display:grid;gap:25px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
-    .card{background:var(--cardbg);border-radius:12px;overflow:hidden;box-shadow:0 4px 10px rgba(0,0,0,.07);text-align:center}
-    .card-image{aspect-ratio:1/1;object-fit:cover}
+    .card-grid{display:grid;gap:25px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+    .card{background:var(--cardbg);border-radius:12px;overflow:hidden;box-shadow:0 4px 10px rgba(0,0,0,.07)}
+    .card-image{aspect-ratio:16/9;object-fit:cover}
     .card-content{padding:18px}
-    .card-title{font-family:'Playfair Display',serif;font-size:1.2rem;color:var(--accent);margin:0 0 6px}
-    .card-text{margin:0;font-size:.95rem}
+    .card-title{font-family:'Playfair Display',serif;font-size:1.3rem;color:var(--accent);margin:0 0 6px}
+    .card-text{margin:0}
 
     /* FOOTER */
     footer{background:var(--dark);color:var(--light);padding:40px 0 18px;margin-top:60px}
@@ -64,13 +64,13 @@
   <!-- NAV -->
   <nav>
     <div class="container nav-container">
-      <a href="../index.html" class="logo">Echo Harmony</a>
+      <a href="https://ildan27.github.io/EchoHarmony/" class="logo">Echo Harmony</a>
       <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-controls="navLinks" aria-expanded="false"><i class="fas fa-bars"></i></button>
       <ul class="nav-links" id="navLinks">
-        <li><a href="../index.html"><i class="fas fa-home icon" aria-hidden="true"></i>Home</a></li>
-        <li><a href="live.html"><i class="fas fa-microphone-alt icon" aria-hidden="true"></i>Live</a></li>
+        <li><a href="https://ildan27.github.io/EchoHarmony/" ><i class="fas fa-home icon" aria-hidden="true"></i>Home</a></li>
+        <li><a href="live.html" class="active"><i class="fas fa-microphone-alt icon" aria-hidden="true"></i>Live</a></li>
         <li><a href="music.html"><i class="fas fa-music icon" aria-hidden="true"></i>Music</a></li>
-        <li><a href="merch.html" class="active"><i class="fas fa-tshirt icon" aria-hidden="true"></i>Merch</a></li>
+        <li><a href="merch.html"><i class="fas fa-tshirt icon" aria-hidden="true"></i>Merch</a></li>
         <li><a href="events.html"><i class="fas fa-calendar-alt icon" aria-hidden="true"></i>Events</a></li>
         <li><a href="news.html"><i class="fas fa-newspaper icon" aria-hidden="true"></i>News</a></li>
       </ul>
@@ -78,28 +78,27 @@
   </nav>
 
   <!-- HERO -->
-  <header class="hero" role="img" aria-label="Echo Harmony merchandise display">
+  <header class="hero" role="img" aria-label="On‑stage performance image">
     <div class="hero-content">
-      <h1>Official Merchandise</h1>
-      <p class="tagline">Wear the vibe. Share the sound.</p>
+      <h1>Live Performances</h1>
+      <p class="tagline">Experience Echo Harmony in real time</p>
     </div>
   </header>
 
-  <!-- FEATURED COLLECTION -->
+  <!-- LIVESTREAM SCHEDULE -->
   <main class="container">
     <section class="featured-section">
-      <h2 class="section-title">Featured Collection</h2>
+      <h2 class="section-title">Upcoming Livestreams</h2>
       <div class="card-grid">
-        <article class="card"><img src="/api/placeholder/400/400" alt="Featured hoodie" class="card-image"><div class="card-content"><h3 class="card-title">Album‑Art Hoodie</h3><p class="card-text">Soft fleece • S‑XXL</p></div></article>
-        <article class="card"><img src="/api/placeholder/400/400" alt="Vinyl bundle" class="card-image"><div class="card-content"><h3 class="card-title">Vinyl + Tee Bundle</h3><p class="card-text">Limited press</p></div></article>
-        <article class="card"><img src="/api/placeholder/400/400" alt="Enamel pin set" class="card-image"><div class="card-content"><h3 class="card-title">Enamel Pin Set</h3><p class="card-text">3‑pack</p></div></article>
+        <article class="card"><img src="assets/img/studiolivestream.jpg" alt="Studio livestream poster" class="card-image"><div class="card-content"><h3 class="card-title">Studio Session</h3><p class="card-text">May 25 • 8 PM EST</p></div></article>
+        <article class="card"><img src="assets/img/fanqa.jpg" alt="Fan Q&A livestream" class="card-image"><div class="card-content"><h3 class="card-title">Fan Q&A</h3><p class="card-text">June 5 • 7 PM EST</p></div></article>
+        <article class="card"><img src="assets/img/behindthescenes.jpg" alt="Behind‑the‑scenes livestream" class="card-image"><div class="card-content"><h3 class="card-title">Behind the Scenes</h3><p class="card-text">June 20 • 6 PM EST</p></div></article>
       </div>
     </section>
 
-    <!-- APPAREL -->
+    <!-- HIGHLIGHTS -->
     <section class="featured-section">
-      <h2 class="section-title">Apparel</h2>
+      <h2 class="section-title">Recent Highlights</h2>
       <div class="card-grid">
-        <article class="card"><img src="/api/placeholder/400/400" alt="Logo Tee" class="card-image"><div class="card-content"><h3 class="card-title">Classic Logo Tee</h3><p class="card-text">Black / White</p></div></article>
-        <article class="card"><img src="/api/placeholder/400/400" alt="Cropped top" class="card-image"><div class="card-content"><h3 class="card-title">Cropped Top</h3><p class="card-text">Lavender</p></div></article>
-        <article class="card"><img src="/api/placeholder/400/400" alt="Dad Hat" class="card-image"><div class
+        <article class="card"><img src="assets/img/summerfestival.jpg" alt="Summer festival highlight" class="card-image"><div class="card-content"><h3 class="card-title">Summer Fest 2024</h3><p class="card-text">Watch on YouTube</p></div></article>
+        <article class="card"><img src="assets/img/rooftopmusic.jpg" alt="Acoustic rooftop set" class="card-image"><div class="card-content"><
