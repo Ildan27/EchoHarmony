@@ -1,18 +1,54 @@
-<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Echo Harmony - Home</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Echo Harmony – Official Site</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lora:wght@400;500&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" defer></script>
+
+  <!-- Site‑wide inline CSS (same palette) -->
+<style>
+:root{--primary:#7c4dff;--secondary:#3f51b5;--bg:#e0e0f8;--dark:#4a148c;--light:#fff;--accent:#673ab7;--navbg:rgba(197,202,233,.85);--cardbg:rgba(255,255,255,.94)}
+...
+</style>
 </head>
 <body>
-    <h1>Home</h1>
-    <nav>
-        <a href="pages/live.html"><span class="icon live-icon"></span>Live</a>
-        <a href="pages/music.html"><span class="icon music-icon"></span>Music</a>
-        <a href="pages/merch.html"><span class="icon merch-icon"></span>Merch</a>
-        <a href="pages/events.html"><span class="icon events-icon"></span>Events</a>
-        <a href="pages/new.html"><span class="icon new-icon"></span>New</a>
-    </nav>
-    <p>Welcome to Echo Harmony's official site</p>
+  <!-- NAV -->
+  <nav>
+    <div class="container nav-container">
+      <a href="https://ildan27.github.io/EchoHarmony/" class="logo">Echo Harmony</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-controls="navLinks" aria-expanded="false"><i class="fas fa-bars"></i></button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="https://ildan27.github.io/EchoHarmony/" class="active"><i class="fas fa-home icon" aria-hidden="true"></i>Home</a></li>
+        <li><a href="live.html"><i class="fas fa-microphone-alt icon" aria-hidden="true"></i>Live</a></li>
+        <li><a href="music.html"><i class="fas fa-music icon" aria-hidden="true"></i>Music</a></li>
+        <li><a href="merch.html"><i class="fas fa-tshirt icon" aria-hidden="true"></i>Merch</a></li>
+        <li><a href="events.html"><i class="fas fa-calendar-alt icon" aria-hidden="true"></i>Events</a></li>
+        <li><a href="news.html"><i class="fas fa-newspaper icon" aria-hidden="true"></i>News</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero" role="img" aria-label="Crowd at concert">
+    <div class="hero-content">
+      <h1>Echo Harmony</h1>
+      <p class="tagline">Immersive sonic experiences that resonate with your soul</p>
+      <a href="music.html" class="cta-button">Listen Now</a>
+    </div>
+  </header>
+
+  <!-- FEATURED RELEASES -->
+  <main class="container">
+    <section class="featured-section">
+      <h2 class="section-title">Latest Releases</h2>
+      <div class="card-grid">
+        <article class="card"><img src="assets/img/echoesoftomorrow.jpg" alt="Echoes of Tomorrow album cover" class="card-image"><div class="card-content"><h3 class="card-title">Echoes of Tomorrow</h3><p class="card-text">Our latest album explores nostalgic future soundscapes.</p><a href="music.html" class="card-link">Listen Now <i class="fas fa-arrow-right" aria-hidden="true"></i></a></div></article>
+        <article class="card"><img src="assets/img/harmonicresonance.jpg" alt="Harmonic Resonance EP" class="card-image"><div class="card-content"><h3 class="card-title">Harmonic Resonance</h3><p class="card-text">Collaborative EP featuring guest artists.</p><a href="music.html" class="card-link">Listen Now <i class="fas fa-arrow-right" aria-hidden="true"></i></a></div></article>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
